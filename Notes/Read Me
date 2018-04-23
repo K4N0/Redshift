@@ -1,0 +1,52 @@
+Clone the workshop on to your desktop
+https://github.com/campoy/go-tooling-workshop
+-----------------------------------------------------------------------------------------------------------
+
+Testing stuff
+In this video I cover some of the dev tools that I use in my day to day as a gopher at Google.
+
+VS Code: https://code.visualstudio.com
+vscode-go: https://github.com/Microsoft/vscode-go
+go-wrk: https://github.com/tsliwowicz/go-wrk
+go-torch: https://github.com/uber/go-torch
+
+-----------------------------------------------------------------------------------------------------------
+Steps to Reproduce:
+choose GOLANG environment
+start coding, declare import, for example fmt
+after typing fmt. and pressing space there is no dropdown hint about available methods, just "Panic"
+
+gocode close and go get -u github.com/nsf/gocode fixed it for me.
+=-----------------------------------------------------------------------------------------------------------
+
+After installing VSCodeSetup, it's an editor like Atom.
+hold ctrl-shift-p and type in: ext install Go
+At the top you will see, Go by lukehoban, select and install that one.
+
+-----------------------------------------------------------------------------------------------------------
+Install and update Gitbash for a command prompt type console.
+
+go get -v golang.org/x/net/websocket
+
+--------------------------------------------------------------------------------------------------
+to auto refresh webservers
+go get github.com/pilu/fresh
+-------------------------------------------------------
+run 
+ go get github.com/mattn/go-sqlite3
+go get github.com/gorilla/websocket
+after installing GCCsetup in the installation folder.
+Make sure to add in the enviormental path,  C:\TDM-GCC-64\bin\
+-------------------------------------------------------------------------
+html auto refresh code, goes in between the head
+<html>
+  <head>     jsut this part     <meta http-equiv="refresh" content="30" />            </head>
+  <body>
+the rest of this is an example of where it went.     
+      <img src="public\images\baigebanner.png" width="900" height="150">
+      <link rel="stylesheet" href="public/css/style.css">
+      <h1>Welcome to the new dev website</h1>
+      <h2>Some stuff</h2>
+      <h3>More stuff</h3>
+
+
