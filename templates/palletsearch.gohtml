@@ -1,25 +1,10 @@
 
-<!DOCTYPE html>
-<head>
-   <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-	$(function() {
-			$("#header").load("header.gohtml");
-	});
-</script>
-<script>
-	$(function() {
-			$("#footer").load("footer.gohtml");
-	});
-</script>
-</head>
-<body>
-<div id="header"></div>
+{{template "header"}}
 
 		<!-- header wrapper -->
 		<div class="header-wrapper sm-padding bg-grey">
 			<div class="container">
-				<h2>ICQA Department</h2>
+				<h2>Pallets Research Tool</h2>
 				<ul class="breadcrumb">
 					<li class="breadcrumb-item"><a href="index.html">Home</a></li>
 					<li class="breadcrumb-item"><a href="index.html#blog">Comments</a></li>
@@ -29,7 +14,4 @@
 		</div>
 		<!-- /header wrapper -->
 
-<div id="footer"></div>
-</body>
-
-
+{{template "footer"}}
