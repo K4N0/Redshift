@@ -6,6 +6,7 @@ import (
 )
 
 var tpl *template.Template
+var x string
 
 func init() {
 	tpl = template.Must(template.ParseGlob("templates/*"))
@@ -21,6 +22,7 @@ func main() {
 	http.HandleFunc("/test", test)
 	http.Handle("/public/", http.StripPrefix("/public/", http.FileServer(http.Dir("public"))))
 	http.ListenAndServe(":80", nil)
+
 }
 
 func index(w http.ResponseWriter, r *http.Request) {
